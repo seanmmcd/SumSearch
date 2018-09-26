@@ -1,5 +1,5 @@
 package sample;
-
+//Sean McDonough, RIOT API access. Desktop OP.GG.
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
