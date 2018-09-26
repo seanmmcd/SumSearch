@@ -4,7 +4,10 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
+
+import static javafx.stage.StageStyle.UNDECORATED;
 
 public class Main extends Application {
 
@@ -13,6 +16,7 @@ public class Main extends Application {
         Parent PlayerHome = FXMLLoader.load(getClass().getResource("PlayerHome.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(PlayerHome));
+        primaryStage.initStyle(UNDECORATED);
         primaryStage.show();
     }
 
