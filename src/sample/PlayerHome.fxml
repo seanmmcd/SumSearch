@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle id="ProfileBackground" arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="128.0" layoutX="-6.0" layoutY="25.0" stroke="#c3c3c3" strokeType="INSIDE" width="790.0" />
+      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="783.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Home" />
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Source Code" />
+                  <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="101.0" layoutX="14.0" layoutY="38.0" stroke="#434343" strokeType="INSIDE" width="101.0" />
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="15.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fill="#1a1a1a" layoutX="122.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PROFILE NAME:">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <Text fill="#1a1a1a" layoutX="122.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":RANK: :LP:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#1a1a1a" layoutX="122.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":LAST PLAYED:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <ScrollPane layoutX="533.0" layoutY="49.0" prefHeight="90.0" prefWidth="238.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="105.0" prefWidth="223.0">
+               <children>
+                  <AnchorPane id="OneTrickAnchorPane" layoutY="2.0" prefHeight="25.0" prefWidth="223.0">
+                     <children>
+                        <Text id="OneTrickTextField" layoutX="6.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frequent One Trick Player:" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="AbandonAnchorPane" layoutY="27.0" prefHeight="25.0" prefWidth="223.0">
+                     <children>
+                        <Text id="AbandonTextField" layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High Amounts of Abandons/DC:" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="LossAvgAnchorPane" layoutY="51.0" prefHeight="25.0" prefWidth="223.0">
+                     <children>
+                        <Text id="LossAvgTextField" layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Abnormal Recent Loss Average:" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane id="LowAmountOfGamesAnchorPane" layoutY="76.0" prefHeight="25.0" prefWidth="223.0">
+                     <children>
+                        <Text id="LowAmountOfGamesTextField" layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Low Amount of Recent Games:" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Text id="ProblemGameplayTextField" layoutX="533.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Problematic Gameplay Warnings:" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="360.0" layoutX="14.0" layoutY="201.0" stroke="#434343" strokeType="INSIDE" width="223.0" />
+      <AnchorPane layoutX="15.0" layoutY="201.0" prefHeight="360.0" prefWidth="223.0">
+         <children>
+            <AnchorPane id="MostGamesAnchorPane1" prefHeight="60.0" prefWidth="223.0">
+               <children>
+                  <ImageView id="MostGamesChampIcon1" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="MostGamesAnchorPane2" layoutY="60.0" prefHeight="60.0" prefWidth="223.0">
+               <children>
+                  <ImageView id="MostGamesChampIcon2" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="MostGamesAnchorPane3" layoutY="120.0" prefHeight="60.0" prefWidth="223.0">
+               <children>
+                  <ImageView id="MostGamesChampIcon3" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="MostGamesAnchorPane4" layoutY="180.0" prefHeight="60.0" prefWidth="223.0">
+               <children>
+                  <ImageView id="MostGamesChampIcon4" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="MostGamesAnchorPane5" layoutY="240.0" prefHeight="60.0" prefWidth="223.0">
+               <children>
+                  <ImageView id="MostGamesChampIcon5" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+            <AnchorPane id="MostGamesAnchorPane6" layoutY="300.0" prefHeight="60.0" prefWidth="223.0">
+               <children>
+                  <ImageView id="MostGamesChampIcon6" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Text layoutX="15.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Most Games Played">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="251.0" layoutY="200.0" prefHeight="387.0" prefWidth="519.0">
+         <children>
+            <ScrollPane prefHeight="387.0" prefWidth="519.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1350.0" prefWidth="504.0">
+                     <children>
+                        <AnchorPane layoutY="-4.0" prefHeight="100.0" prefWidth="504.0">
+                           <children>
+                              <Rectangle id="RecentGame1" arcHeight="5.0" arcWidth="5.0" fill="#f2796fd6" height="90.0" layoutY="5.0" stroke="#42424200" strokeType="INSIDE" width="504.0" />
+                           </children>
+                        </AnchorPane>
+                        <Rectangle id="RecentGame2" arcHeight="5.0" arcWidth="5.0" fill="#71bcf0d6" height="90.0" layoutY="89.0" stroke="#42424200" strokeType="INSIDE" width="504.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+      <Text layoutX="251.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recent Ranked Games">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
