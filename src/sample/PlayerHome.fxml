@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="783.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
       <Rectangle id="ProfileBackground" arcHeight="5.0" arcWidth="5.0" fill="#e1e1e1" height="128.0" layoutX="-6.0" layoutY="25.0" stroke="#c3c3c3" strokeType="INSIDE" width="790.0" />
-      <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="760.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="Home" />
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Source Code" />
-                  <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
-      </MenuBar>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="101.0" layoutX="14.0" layoutY="38.0" stroke="#434343" strokeType="INSIDE" width="101.0" />
       <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="15.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
       <Text fill="#1a1a1a" layoutX="122.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":PROFILE NAME:">
@@ -182,6 +169,12 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <Button id="exitButton" fx:id="exitButton" layoutX="759.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="16.0" text="X" onMousePressed="#closeApplication"/>
+      <Button id="exitButton" fx:id="exitButton" layoutX="757.0" mnemonicParsing="false" onMousePressed="#closeApplication" prefHeight="25.0" prefWidth="16.0" text="X" />
+      <TextField prefHeight="25.0" prefWidth="271.0" promptText="Enter Summoner Name Here...">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </TextField>
+      <Button layoutX="271.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Search" />
    </children>
 </AnchorPane>
