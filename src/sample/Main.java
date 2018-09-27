@@ -10,13 +10,28 @@ import javafx.stage.Stage;
 import static javafx.stage.StageStyle.UNDECORATED;
 
 public class Main extends Application {
+    private double x;
+    private double y;
 
     @Override
     public void start(Stage primaryStage) throws Exception{
+
         Parent PlayerHome = FXMLLoader.load(getClass().getResource("PlayerHome.fxml"));
         primaryStage.setTitle("Hello World");
         primaryStage.setScene(new Scene(PlayerHome));
         primaryStage.initStyle(UNDECORATED);
+
+        PlayerHome.setOnMousePressed(event -> {
+            x = event.getSceneX();
+            y = event.getSceneY();
+        });
+
+        PlayerHome.setOnMouseDragged(event -> {
+            primaryStage.setX(event.getScreenX() - x);
+            primaryStage.setY(event.getScreenY() - y);
+        });
+
+
         primaryStage.show();
     }
 
